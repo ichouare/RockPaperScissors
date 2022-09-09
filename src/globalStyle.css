@@ -1,0 +1,185 @@
+
+:root{
+    /* ### Primary  */
+    --Scissors-Gradient: hsl(39, 89%, 49%) to hsl(40, 84%, 53%);
+    --Paper-Gradient: hsl(230, 89%, 62%) to hsl(230, 89%, 65%); 
+    --Rock-Gradient: hsl(349, 71%, 52%) to hsl(349, 70%, 56%);
+    --Lizard-Gradient: hsl(261, 73%, 60%) to hsl(261, 72%, 63%);
+     --Cyan: hsl(189, 59%, 53%) to hsl(189, 58%, 57%);
+
+    /* ### Neutral  */
+     --Dark-Text: hsl(229, 25%, 31%);
+    --Score-Text: hsl(229, 64%, 46%);
+     --Header-Outline: hsl(217, 16%, 45%);
+}
+
+
+.play{
+    height:300px;
+    width:300px;
+    background: url('./images/bg-pentagon.svg');
+    background-size:contain;
+    background-position: center;
+    background-repeat:no-repeat;
+    position: relative;
+    position:relative;
+    
+
+}
+.play div {
+    width:100px;
+    height:100px;
+    border: 12px solid red;
+    border-radius :100%;
+    text-align:center;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2) inset;
+    cursor: pointer;
+   
+    
+}
+.play div img {
+    width:  2.5em;
+    object-fit: cover;
+    transform: rotate(-120deg);
+
+}
+
+.roles{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    z-index: 99;
+}
+.roles h2{
+   color:var(--Header-Outline);
+   font-weight: 800;
+   letter-spacing: 1.3px;
+}
+
+.picked div article{
+    width: 130px;
+    height: 130px;
+    border: 12px solid ;
+    border-radius:50%;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2) inset;
+}
+.picked div article img{
+  object-fit: cover ;
+} 
+
+.picked div h1 {
+    letter-spacing: 1.4;
+    color: rgba(249 , 249 , 249 , 0.9)
+}
+.picked div p {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.picked div .btn {
+font-weight: 700;
+letter-spacing: 2px;
+}
+
+#img-1 {
+    position: absolute;
+    top: -50px;
+    left: 100px;
+    transition: all 0.3s;
+}
+
+#img-1 img {
+    transform: scale(1.2);
+}
+
+#img-2 {
+    position: absolute;
+    top: 20%;
+    right: -10%;
+    transform: rotate(-45px);
+    transition: all 0.3s;
+}
+
+#img-2 img {
+    transform: scale(1.1);
+    transform: rotate(-45px);
+}
+
+#img-3 {
+    position: absolute;
+    bottom: -5%;
+    right: 0%;
+    transform: rotate(-45px);
+    transition: all 0.3s;
+}
+
+#img-3 img {
+    transform: scale(1.1);
+    transform: rotate(-45px);
+}
+
+#img-4 {
+    position: absolute;
+    bottom: -5%;
+    left: 10%;
+    transform: rotate(-45px);
+    transition: all 0.3s;
+}
+
+#img-4 img {
+    transform: scale(1.1);
+    transform: rotate(-45px);
+}
+
+#img-5 {
+    position: absolute;
+    top: 20%;
+    left: -10%;
+    transform: rotate(-45px);
+    transition: all 0.3s;
+}
+
+#img-5 img {
+    transform: scale(1.1);
+    transform: rotate(-45px);
+}
+
+.imgAnimate:hover {
+    transform: translate3d(0px, -8px, 0px);
+}
+
+@media (min-width: 767px) {
+
+    .play div {
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2) inset;
+        }
+    .roles{
+     width:330px;
+     height:330px;
+     position: absolute;
+    top :20%;
+    left :30%;
+    border-radius:  10px;
+    }
+    .roles img {
+        width: 200px;
+        object-fit:  cover;
+    }
+         .roles button img {
+            width:25px;
+            height: 25px;
+         }
+}
+@media (min-width: 1024px) {
+    .roles {
+            width: 330px;
+            height: 330px;
+            position: absolute;
+            top: 24%;
+            left: 39%;
+            border-radius: 10px;
+        }
+}
+
